@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from "./pages/Home";
-import AddTodo from "./pages/AddTodo";
-import EditTodo from "./pages/EditTodo";
+import Home from "./Pages/Home";
+import AddTodo from "./Pages/AddTodo";
+import EditTodo from "./Pages/EditTodo";
 import Header from "./components/Header";
 
 function App() {

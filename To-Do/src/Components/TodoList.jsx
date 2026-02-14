@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function TodoList({ todos, onDelete, onToggle }) {
   if (todos.length === 0) {
     return <p>No tasks available</p>;
@@ -24,6 +26,13 @@ function TodoList({ todos, onDelete, onToggle }) {
             >
               Done
             </button>
+
+            <Link
+              to={`/edit/${todo.id}`}
+              className="px-2 py-1 bg-blue-500 text-white rounded"
+            >
+              Edit
+            </Link>
 
             <button
               onClick={() => onDelete(todo.id)}
